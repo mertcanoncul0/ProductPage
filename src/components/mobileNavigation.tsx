@@ -33,7 +33,7 @@ export function MobileNavigation() {
   return (
     <>
       <button className="header-nav__mobile-menu-btn" onClick={openDrawer}>
-        <img src="/public/images/icon-menu.svg" alt="" />
+        <img src="/images/icon-menu.svg" alt="" />
       </button>
       <div
         className={`header-nav__mobile-drawer${isDrawerOpen ? " show" : ""}`}
