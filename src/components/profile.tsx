@@ -17,7 +17,7 @@ export function Profile() {
         className={`header-actions__profile${profile ? " active" : ""}`}
         onClick={handleProfileState}
       >
-        <img src="/public/images/image-avatar.png" alt="" />
+        <img src="/images/image-avatar.png" alt="" />
       </button>
 
       <div
