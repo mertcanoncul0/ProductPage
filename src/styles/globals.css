@@ -486,7 +486,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 990;
+  z-index: 2220;
 
   opacity: 0;
   visibility: hidden;
@@ -569,7 +569,7 @@ body {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 980;
+  z-index: 2210;
   opacity: 0;
   visibility: hidden;
   transition: opacity 175ms ease, visibility 175ms ease;
