@@ -22,6 +22,7 @@ export function Cart() {
     <>
       <button
         className={`header-actions__cart${cartOpen ? " active" : ""}`}
+        aria-label={`Cart with ${cart.length} items`}
         onClick={handleCartShow}
       >
         <span
@@ -43,9 +44,9 @@ export function Cart() {
       <div
         className={`header-actions__cart-dropdown${cartOpen ? " show" : ""}`}
       >
-        <header className="cart-dropdown__header">
+        <div className="cart-dropdown__header">
           <h3 className="cart-dropdown__header-title">Cart</h3>
-        </header>
+        </div>
         <div
           className={`cart-dropdown__main${cart.length === 0 ? " empty" : ""}`}
         >
@@ -75,6 +76,7 @@ export function Cart() {
 
                     <button
                       className="cart-dropdown__main-list__del-button"
+                      aria-label="Delete product"
                       onClick={() => deleteProduct(item.id)}
                     >
                       <svg
@@ -96,7 +98,12 @@ export function Cart() {
                 ))}
               </ul>
 
-              <button className="cart-dropdown__main__button">Checkout</button>
+              <button
+                className="cart-dropdown__main__button"
+                aria-label="Checkout cart"
+              >
+                Checkout
+              </button>
             </>
           )}
         </div>

@@ -22,13 +22,14 @@ export function ImageGallery() {
   }
 
   return (
-    <section className="main__image-gallery">
+    <div className="main__image-gallery">
       <figure className="image-gallery__img" onClick={handleLightboxOpen}>
         <img src={images[activeIndex].src} alt={images[activeIndex].alt} />
 
         <div className="image-gallery__img-index-btns">
           <button
             className="image-gallery__next-button"
+            aria-label={`Next ${activeIndex + 1} image `}
             onClick={handleNextIndex}
           >
             <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -44,6 +45,7 @@ export function ImageGallery() {
 
           <button
             className="image-gallery__prev-button"
+            aria-label={`Previous ${activeIndex + 1} image `}
             onClick={handlePrevIndex}
           >
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -71,6 +73,6 @@ export function ImageGallery() {
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   )
 }

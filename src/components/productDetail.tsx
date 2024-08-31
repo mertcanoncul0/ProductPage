@@ -63,12 +63,21 @@ export function ProductDetail() {
           <p className="product-detail__price-title">$125.00</p>
           <p className="product-detail__price-title discount">$250.00</p>
         </div>
-        <button className="product-detail__price-button">50%</button>
+        <button
+          className="product-detail__price-button"
+          aria-label="Price button"
+        >
+          50%
+        </button>
       </div>
 
       <div className="product-detail__bottom">
         <div className="product-detail__bottom-counter">
-          <button className="minus" onClick={handleDecrement}>
+          <button
+            className="minus"
+            aria-label="Decrement count"
+            onClick={handleDecrement}
+          >
             <svg
               width="12"
               height="4"
@@ -87,7 +96,7 @@ export function ProductDetail() {
 
           <p className="count">{count}</p>
 
-          <button onClick={handleIncrement}>
+          <button onClick={handleIncrement} aria-label="Increment count">
             <svg
               width="12"
               height="12"
@@ -106,6 +115,7 @@ export function ProductDetail() {
         </div>
         <button
           className="product-detail__bottom-cart-btn"
+          aria-label="Add to cart"
           onClick={() => handleAddToCart(1)}
         >
           <img src="/images/icon-cart.svg" alt="Add cart" />

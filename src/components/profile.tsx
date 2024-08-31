@@ -15,6 +15,7 @@ export function Profile() {
     <>
       <button
         className={`header-actions__profile${profile ? " active" : ""}`}
+        aria-label="Profile"
         onClick={handleProfileState}
       >
         <img src="/images/image-avatar.png" alt="profile icon" />

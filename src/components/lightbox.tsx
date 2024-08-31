@@ -44,6 +44,7 @@ export function Lightbox() {
         <figure className="image-gallery__img">
           <button
             className="main__lightbox-close"
+            aria-label="Close lightbox"
             onClick={handleLightboxClose}
           >
             <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
@@ -57,6 +58,7 @@ export function Lightbox() {
 
           <button
             className="image-gallery__prev-button"
+            aria-label={`Previous ${activeIndex + 1} image `}
             onClick={handlePrevIndex}
           >
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -77,6 +79,7 @@ export function Lightbox() {
 
           <button
             className="image-gallery__next-button"
+            aria-label={`Next ${activeIndex + 1} image `}
             onClick={handleNextIndex}
           >
             <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
