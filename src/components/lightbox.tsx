@@ -3,7 +3,6 @@ import { images } from "../constants"
 import { useGalleryStore } from "../hooks/useGalleryStore"
 import { useLightboxStore } from "../hooks/useLightboxStore"
 import { useEffect, useState } from "preact/hooks"
-import { Logo } from "./logo"
 
 export function Lightbox() {
   const [activeIndex] = useAtom(useGalleryStore)
@@ -15,6 +14,7 @@ export function Lightbox() {
 
     const handleClick = (e: Event) => {
       const target = e.target as HTMLElement
+
       if (target.contains(document.querySelector(".main__lightbox-overlay"))) {
         setLightboxOpen(false)
       }
