@@ -23,10 +23,20 @@ export function Profile() {
       <div
         className={`header-actions__profile-dropdown${profile ? " show" : ""}`}
       >
-        <header className="profile-dropdown__header">
-          <h3 className="profile-dropdown__header-title">Profile</h3>
-        </header>
-        <ul className={`profile-dropdown__list`}></ul>
+        <ul className="profile-dropdown__list">
+          <li className="profile-dropdown__item">
+            <a href="#/profile">Profile</a>
+          </li>
+          <li className="profile-dropdown__item">
+            <a href="#/orders">Orders</a>
+          </li>
+          <li className="profile-dropdown__item">
+            <a href="#/settings">Settings</a>
+          </li>
+          <li className="profile-dropdown__item logout">
+            <a href="#/logout">Logout</a>
+          </li>
+        </ul>
       </div>
     </>
   )

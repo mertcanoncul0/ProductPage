@@ -2,7 +2,13 @@ import { atom } from "jotai"
 
 interface CartStore {
   cartOpen: boolean
-  cart: { name: string; price: number }[]
+  cart: {
+    id: number
+    name: string
+    price: number
+    quantity: number
+    image: number
+  }[]
 }
 
 export const useCartStore = atom<CartStore>({
