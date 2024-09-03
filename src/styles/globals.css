@@ -974,6 +974,10 @@ body {
   .image-gallery__img {
     height: 300px;
   }
+
+  .main__image-product-detail {
+    padding-block: 0 1.5rem;
+  }
 }
 
 @media (width <= 425px) {
