@@ -486,7 +486,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 2220;
+  z-index: 2232;
 
   opacity: 0;
   visibility: hidden;
@@ -569,7 +569,7 @@ body {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 2210;
+  z-index: 2230;
   opacity: 0;
   visibility: hidden;
   transition: opacity 175ms ease, visibility 175ms ease;
@@ -635,7 +635,7 @@ body {
 
 .menu {
   position: relative;
-  z-index: 3003;
+  z-index: 2225;
   display: none;
 
   .line {
@@ -789,7 +789,7 @@ body {
     width: 33%;
     background-color: white;
     color: black;
-    z-index: 2220;
+    z-index: 2224;
 
     opacity: 0;
     visibility: hidden;
@@ -831,7 +831,7 @@ body {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2210;
+    z-index: 2223;
 
     opacity: 0;
     visibility: hidden;
