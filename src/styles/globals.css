@@ -636,6 +636,7 @@ body {
 .menu {
   position: relative;
   z-index: 3003;
+  display: none;
 
   .line {
     fill: none;
@@ -776,7 +777,7 @@ body {
     gap: 1rem;
   }
 
-  .header-nav__mobile-menu-btn {
+  .menu {
     display: block;
   }
 
